@@ -1,0 +1,17 @@
+---
+version: "3.9"
+services:
+  api:
+    #Here is an image from cloud repository
+    #Change to your local if you built it yourself
+    build: ./api
+    ports:
+    - "8000:8000"
+    expose:
+    - "8000"
+  web:
+    #Uncomment "image" line instead of "build" line to get an image from cloud repository
+    #image: 
+    build: ./web
+    ports:
+    - "1337:80"

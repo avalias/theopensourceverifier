@@ -1,0 +1,3 @@
+requests
+py-algorand-sdk
+streamlit

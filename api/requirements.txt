@@ -1,0 +1,6 @@
+requests
+pyteal
+py-algorand-sdk
+fastapi
+uvicorn
+pydriller

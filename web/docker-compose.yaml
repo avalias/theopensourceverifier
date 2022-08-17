@@ -1,0 +1,10 @@
+---
+version: "3.9"
+services:
+  web:
+    #Uncomment "image" line instead of "build" line to get an image from cloud repository
+    #image: 
+    build: .
+    ports:
+    - "1337:80"
+ 
