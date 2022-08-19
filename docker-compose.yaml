@@ -10,7 +10,6 @@ services:
     expose:
     - "8000"
   web:
-    #Uncomment "image" line instead of "build" line to get an image from cloud repository
     #image: 
     build: ./web
     ports:
