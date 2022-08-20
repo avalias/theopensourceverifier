@@ -19,7 +19,7 @@ st.title('The Open Source Verifier')
 
 def compileAny(anyCode):
     newHeaders = {'Content-type': 'text/plain', 'Accept': 'text/plain'}
-    res = requests.post('http://127.0.0.1:8000/compile/any',
+    res = requests.post('http://api:8000/compile/any',
                         data=anyCode,
                         headers=newHeaders)
     return res.text
@@ -34,7 +34,7 @@ def byteCode(appId): #function will get bytecode from app id from algoexplorer
     
 def gitresult(giturl):
     newHeaders = {'Content-type': 'text/plain', 'Accept': 'application/json'}
-    res = requests.post('http://127.0.0.1:8000/git/history',
+    res = requests.post('http://api:8000/git/history',
                         data=giturl,
                         headers=newHeaders)
     commits = json.loads(res.text)
