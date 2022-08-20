@@ -45,8 +45,7 @@ cd theopensourceverifier
 docker compose up
 ```
 
-After those commands, the verifier must be up and running. To see the Web App, visit [http://127.0.0.1:1337](http://127.0.0.1:1337).
-If you would like to see the FastAPI docs for the backend, visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
+After those commands, the verifier must be up and running. To see the Web App, visit [http://127.0.0.1:1337](http://127.0.0.1:1337). It should look like our [hosted version](http://77.37.196.18:1337). If you would like to see the FastAPI docs for the backend, visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
 ## The community mission
 
@@ -82,15 +81,14 @@ With the [open source verifier](http://77.37.196.18:1337), you can trust the com
 
 The devil is in the details. So, here is a list of nerdy points:
 
-- If you have your own [Algorand Indexer](https://github.com/algorand/sandbox) running, just replace the address `algoexplorerapi.io` in `/api/verify.py` and `/web/app.py` with your local node, indexer addresses.
-  They are compatible and interchangeable. Now, your verifier is completely independent of any side API.
+- A small tip. If you have your own [Algorand Indexer](https://github.com/algorand/sandbox) running, just replace the address `algoexplorerapi.io` and `purestake.io` in `/api/verify.py` and `/web/app.py` with your local node, indexer addresses. They are compatible and interchangeable. Now, your verifier is completely independent of any side API.
 
-- [Streamlit](https://streamlit.io/) is used for the frontend. So, this project is indeed purely Pythonic. Anyone coming from Data Science and Physics like us, knows it's perfect for rapid prototyping. It's powerful. Yet it's heavy. That's why we separated API from the Web app. The `/api` folder has its own docker-compose.yaml file.
-  React, Svelte, pure
+- Just by changing a single line, you can incentivize authors to open-source best smart-contracts. As we store all succesfull verifications on the blockchain itself. We do a transaction. Change the recepient to the owner of the dApp. Set the reward ammount to something worthy. To filter out cheaters, just filter based on Github stars, forks, first commit date. Simple. Let the magic of open-source spread!
 
-Reach support is po just look at all the amazing they have.
+- [Streamlit](https://streamlit.io/) is used for the frontend. So, this project is indeed purely Pythonic. Anyone coming from Data Science and Physics like us, knows it's perfect for rapid prototyping. It's powerful. 
+We separated API from the Web app. The `/api` folder has its own docker-compose.yaml file. So, after all prototyping-decisions made and finalized. React, Svelte, SolidJs, or any other framework in the world can be used for the Web. 
 
-Some people are pyteal, it already inside of container withour any mounted volumes. It can do little malicous. Yet aws solution and so on . Each run the container would be regenrated. Plus it's to scale!
+- Some people use Http requests, Github API, or good-old scraping to get the source code. Beware! The web version and API [have limits](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting). We use honest `git clone` command under the hood. Currently, in contrast to API, it's unlimited. Sleep soundly, while gazillions of Github repos can be verified.
 
-Yes! Out of the box supports the mighty three:
-[Reach](https://developer.algorand.org/docs/get-started/dapps/reach/), [PyTeal](https://developer.algorand.org/docs/get-started/dapps/pyteal/), [Teal](https://developer.algorand.org/docs/get-details/dapps/avm/teal/). Just check the examples at http://
+- Yes! Out of the box, it supports the mighty three:
+[Reach](https://developer.algorand.org/docs/get-started/dapps/reach/), [PyTeal](https://developer.algorand.org/docs/get-started/dapps/pyteal/), [Teal](https://developer.algorand.org/docs/get-details/dapps/avm/teal/). Even better, we managed to put all the three in one docker container. Unlike, other solutions, which can use Reach only outside of Docker. We natively support it. 
