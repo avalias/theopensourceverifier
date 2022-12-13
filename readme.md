@@ -1,6 +1,6 @@
 # 💗The open source verifier
 
-Dedicated for those who love [Algorand](https://www.algorand.foundation/impact-sustainability). For those who love crypto. The open source verifier is a bridge between off-chain code and on-chain apps. It is more than an API. Looking bigger, it is community-way to punish scams, and build trust for legitimate apps. In [one click](http://77.37.196.18:1337), it verifies, if the on-chain app matches its Github source code. Results are stored forever in the Algorand blockchain itself.
+Dedicated for those who love [Algorand](https://www.algorand.foundation/impact-sustainability). For those who love crypto. The open source verifier is a bridge between off-chain code and on-chain apps. It is more than an API. Looking bigger, it is community-way to punish scams, and build trust for legitimate apps. In [one click](http://veri.algotool.app/), it verifies, if the on-chain app matches its Github source code. Results are stored forever in the Algorand blockchain itself.
 
 In this way, we incentivize smart-contract open sourcing, explore projects and people worthy to trust.
 
@@ -45,7 +45,7 @@ cd theopensourceverifier
 docker compose up
 ```
 
-After those commands, the verifier must be up and running. To see the Web App, visit [http://127.0.0.1:1337](http://127.0.0.1:1337). It should look like our [hosted version](http://77.37.196.18:1337). If you would like to see the FastAPI docs for the backend, visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
+After those commands, the verifier must be up and running. To see the Web App, visit [http://127.0.0.1:1337](http://127.0.0.1:1337). It should look like our [hosted version](http://veri.algotool.app/). If you would like to see the FastAPI docs for the backend, visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
 ## The community mission
 
@@ -75,7 +75,7 @@ The missing link is the open source verifier. Being a bridge between the two wor
 
 $$ \text{Public github } + \text{Community audit} + \text{The open source verifier}= \text{Proven trust} $$
 
-With the [open source verifier](http://77.37.196.18:1337), you can trust the community and each other. Make the world of crypto a safer 💗🍧🍥🌸🐇🩰🏩💌🎀 place. Please, try the open source verifier [http://77.37.196.18:1337](http://77.37.196.18:1337)
+With the [open source verifier](http://veri.algotool.app/), you can trust the community and each other. Make the world of crypto a safer 💗🍧🍥🌸🐇🩰🏩💌🎀 place. Please, try the open source verifier [http://veri.algotool.app/](http://veri.algotool.app/)
 
 ## The tech details for 🦄nerds like us
 
