@@ -4,3 +4,4 @@ py-algorand-sdk
 fastapi
 uvicorn
 pydriller
+python-dotenv
