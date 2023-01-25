@@ -80,10 +80,13 @@ def send_transaction(net, appId, giturl, buildarg, neededcommHash):
     except Exception as e:
         print(e)
 
+# limit 50 for test
+# later do proper pagination or use purestake
+
 
 def checker(appId):
     data = requests.get(
-        "https://algoindexer.algoexplorerapi.io/v2/accounts/{}/transactions?limit=999".format(account_public_key)).json()
+        "https://algoindexer.algoexplorerapi.io/v2/accounts/{}/transactions?limit=50".format(account_public_key)).json()
 
     for transaction in data['transactions']:
         if transaction['sender'] == "{}".format(account_public_key):
