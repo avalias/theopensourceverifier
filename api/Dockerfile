@@ -1,4 +1,4 @@
-FROM reachsh/reach:circleci--master as build
+FROM reachsh/reach:latest as build
 
 FROM python:3.10.5-alpine3.16
 RUN apk add gmp libgmpxx git mariadb-connector-c-dev pcre-dev
