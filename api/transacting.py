@@ -92,4 +92,4 @@ def checker(appId):
                     return True, "https://algoexplorer.io/tx/" + transaction["id"]
             except:
                 pass
-    return False
+    return False, ""
